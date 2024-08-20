@@ -1,0 +1,593 @@
+body {
+  /* background-image: url("/images/bg.jpg"); */
+  margin: 0px;
+  padding: 0px;
+  color: rgb(0, 0, 0);
+}
+.header {
+    background-color:rgb(255, 255, 255);
+    padding: 8px;
+  /* border: 2px solid rgb(11, 255, 7); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px; 
+  /* border: 2px solid red; */
+}
+.left img {
+  height: 40px;
+  width: 40px;
+  margin-right: 4px;
+}
+.name-desc{
+  display: flex;
+  flex-direction: column;
+}
+.name{
+  font-size: 20px;
+}
+.desc{
+  font-size: 13px;
+  font-family: "Lora", serif;
+}
+.mid {
+  /* border: 2px solid red; */
+}
+.right {
+    padding: 8px; 
+  /* border: 2px solid red; */
+}
+.mid {
+  font-family: "Lucida Sans", "Lucida Sans";
+  font-size: 1.4rem;
+}
+.mid ul{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+}
+li{
+    list-style-type: none;
+}
+.mid ul li:hover{
+    cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: auto; /* Ensure the container adjusts to the content */
+}
+
+/* Each slide */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  position: relative; /* Ensure slides are positioned relative to container */
+}
+
+/* Image settings */
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+/* Show the current slide with opacity */
+.activeSlide {
+  display: block;
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1; /* Ensure buttons are above other elements */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit of see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* category */
+/* Basic styling for the category section */
+.category-section {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+}
+
+.category-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Category item base styles */
+.category-item {
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Different sizes for category items */
+.category-large {
+  flex: 1 1 48%;
+  height: 250px;
+  color: black;
+}
+
+.category-medium {
+  flex: 1 1 30%;
+  height: 250px;
+  color: black;
+}
+.category-small {
+  flex: 1 1 20%;
+  height: 250px;
+  color: black;
+}
+
+/* Category content */
+.font-white{
+  color: wheat;
+}
+.category-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.category-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.category-content ul li {
+  margin-bottom: 5px;
+}
+
+.category-content .view-all {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: start;
+}
+
+.category-content .view-all:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Basic styling for the top products section */
+.top-products-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.top-products-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tab-menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tab-menu ul li {
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-menu ul li.active {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.products-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.products-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.products-slide {
+  flex: 0 0 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.products-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.products-slide p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discounted-price {
+  color: red;
+}
+
+.prev-prod, .next-prod {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.prev-prod {
+  left: 10px;
+}
+
+.next-prod {
+  right: 10px;
+}
+
+
+/* Basic styling for the about section */
+.about-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.about-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-logo img {
+  max-width: 80%;
+  height: auto;
+}
+
+.about-text {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-text p:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+.about-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.highlight-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.highlight-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.highlight-item p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* brands carousal */
+/* Basic styling for the brand carousel */
+.brand-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.brand-slide {
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.brand-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.arrow {
+  font-size: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.arrow.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: red;
+}
+/* lower para section */
+/* Container for the Steinway section */
+.steinway-section {
+  background-image: url('/images/lowerbg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust as needed */
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Right side content styling */
+.steinway-content {
+  text-align: center;
+    max-width: 320px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    width: 350px;
+    color: #fff;
+}
+
+.steinway-logo {
+  max-width: 150px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+.steinway-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Buttons styling */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #e10101;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* more from melody */
+.more{
+  text-align: center;
+}
+.moreContent{
+  display: flex;
+}
+.moreItem{
+  margin: 4px;
+    padding: 4px;
+    height: 325px;
+    width: 33%;
+    background-color: #e1ecec;
+}
+
+
+/* footer  */
+
+
+
+
+
+
+
+
+
+/* utility classes */
+.btn{
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #df0606;
+  color:  #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover{
+  background-color: #d00000;
+  color:#fff;
+}

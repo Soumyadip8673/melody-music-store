@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melody Music Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="/images/logo.jpeg" alt="music" />
+        <div class="name-desc">
+          <span class="name">Melody Music Store</span>
+          <span class="desc">because you love music</span>
+        </div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Artists</a></li>
+          <li><a href="/">Genre</a></li>
+          <li><a href="/">Top 50</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Sign up</button>
+        <button class="btn">Sign in</button>
+      </div>
+    </header>
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="mySlides">
+        <img src="images/sl1.avif" alt="Slide 1" />
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="mySlides">
+        <img src="images/sl2.avif" alt="Slide 2" />
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="mySlides">
+        <img src="images/sl3.avif" alt="Slide 3" />
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="mySlides">
+        <img src="images/sl4.avif" alt="Slide 4" />
+      </div>
+
+      <!-- Navigation Arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- category -->
+    <div class="category-section">
+      <h2>Popular Categories</h2>
+      <div class="categories-container">
+        <!-- Category 1 -->
+        <div
+          class="category-item category-large"
+          style="background-image: url('images/cat1.avif')"
+        >
+          <div class="category-content">
+            <h3>Pianos</h3>
+            <ul>
+              <li>Acoustic Pianos</li>
+              <li>Digital Pianos</li>
+              <li>Accessories</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div
+          class="category-item category-medium font-white"
+          style="background-image: url('images/cat2.avif')"
+        >
+          <div class="category-content">
+            <h3>Guitar & Bass</h3>
+            <ul>
+              <li>Acoustic Guitar</li>
+              <li>Electric Guitar</li>
+              <li>Classic Guitar</li>
+              <li>Basses</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+        <!-- Category 3 -->
+        <div
+          class="category-item category-medium"
+          style="background-image: url('images/cat3.avif')"
+        >
+          <div class="category-content">
+            <h3>DRUMS & PERCUSSION</h3>
+            <ul>
+              <li>Drum Sets</li>
+              <li>Digital Drums</li>
+              <li>Cymbals</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div
+          class="category-item category-large font-white"
+          style="background-image: url('images/cat4.avif')"
+        >
+          <div class="category-content">
+            <h3>KEYBOARDS & DMI</h3>
+            <ul>
+              <li>Keyboards</li>
+              <li>Synths, etc</li>
+              <li>Keyboard Amps</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div
+          class="category-item category-small"
+          style="background-image: url('images/cat5.avif')"
+        >
+          <div class="category-content">
+            <h3>INDIAN INSTRUMENTS</h3>
+            <ul>
+              <li>Tablas</li>
+              <li>Harmoniums</li>
+              <li>Indian String Instruments</li>
+              <li>Indian Wind Instruments</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+        <!-- Category 5 -->
+        <div
+          class="category-item category-small"
+          style="background-image: url('images/cat6.avif')"
+        >
+          <div class="category-content">
+            <h3>WIND INSTRUMENTS</h3>
+            <ul>
+              <li>Woodwind</li>
+              <li>Brass Accessories</li>
+              <li>Brass</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+        <!-- Category 5 -->
+        <div
+          class="category-item category-small"
+          style="background-image: url('images/cat7.avif')"
+        >
+          <div class="category-content">
+            <h3>MUSIC BOOKS</h3>
+            <ul>
+              <li>Examination Music</li>
+              <li>Fretted Strings</li>
+              <li>Bowed Strings</li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+          </div>
+        </div>
+
+        <!-- Additional categories can be added similarly -->
+      </div>
+    </div>
+
+    <!-- top products section -->
+    <div class="top-products-section">
+      <h2>Top Melody Products</h2>
+      <div class="tab-menu">
+        <ul>
+          <li class="active" data-tab="best-seller">Best Seller</li>
+          <li data-tab="featured">Featured</li>
+          <li data-tab="hot-offers">Hot Offers</li>
+          <li data-tab="popular-books">Popular Books</li>
+        </ul>
+      </div>
+
+      <div class="products-slider-container">
+        <button class="prev-prod">&#10094;</button>
+        <div class="products-slider">
+          <div class="products-slide">
+            <img src="images/prod1.avif" alt="Product 1" />
+            <p>
+              Mapex, Drum Set, Comet, 5 pcs, Hybrid, with Hardware, Throne &...
+            </p>
+            <div class="price">
+              <span class="original-price">₹51,000</span>
+              <span class="discounted-price">₹43,350</span>
+            </div>
+          </div>
+
+          <div class="products-slide">
+            <img src="images/prod2.avif" alt="Product 2" />
+            <p>
+              Mapex, Drum Set, Comet, 5 pcs, Jazz Jr, with Hardware, Throne &...
+            </p>
+            <div class="price">
+              <span class="original-price">₹51,000</span>
+              <span class="discounted-price">₹43,350</span>
+            </div>
+          </div>
+
+          <div class="products-slide">
+            <img src="images/prod3.avif" alt="Product 3" />
+            <p>
+              Granada, Violin, Presto, Complete with Bow & Case, V381 -Full Size
+            </p>
+            <div class="price">
+              <span class="original-price">₹98,150</span>
+              <span class="discounted-price">₹83,427</span>
+            </div>
+          </div>
+          <div class="products-slide">
+            <img src="images/prod4.avif" alt="Product 3" />
+            <p>
+              Granada, Violin, Presto, Complete with Bow & Case, V381 -Full Size
+            </p>
+            <div class="price">
+              <span class="original-price">₹98,150</span>
+              <span class="discounted-price">₹83,427</span>
+            </div>
+          </div>
+          <div class="products-slide">
+            <img src="images/prod5.avif" alt="Product 3" />
+            <p>
+              Granada, Violin, Presto, Complete with Bow & Case, V381 -Full Size
+            </p>
+            <div class="price">
+              <span class="original-price">₹98,150</span>
+              <span class="discounted-price">₹83,427</span>
+            </div>
+          </div>
+
+          <!-- Add more products here -->
+        </div>
+        <button class="next-prod">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="about-section">
+      <div class="about-content">
+        <div class="about-logo">
+          <img src="/images/logo.jpeg" alt="Furtados Logo" />
+        </div>
+        <div class="about-text">
+          <h2>About Furtados</h2>
+          <p>‘Think Music, Think Furtados’</p>
+          <p>
+            Established in 1865, Furtados has always been a leader in the field
+            of Western music education and knowledge in India. From musical
+            instruments, accessories to print music and digital equipment, we
+            have a complete spectrum of musical instruments in the Western and
+            Indian categories.
+          </p>
+          <p>
+            Furtados has grown into a household name in the music business and
+            has showrooms spread across India. With a growing retail network and
+            over 350 dealer outlets, Furtados holds a record number of
+            international dealerships for top-of-the-line brands in music.
+          </p>
+          <p>
+            At the core of Furtados’ business motto is ‘Trusted Service’. In a
+            pan-India customer survey conducted in the metros and other major
+            cities, three factors characterised Furtados’ services – Quality,
+            Reliability and Trust. Our legacy of over 150 years has helped us
+            build a service standard that is second to none. Furtados has over
+            the years been a trusted partner for providing musical instruments
+            to musicians, teachers, students and institutions across the country
+            – partnerships which continue today and for the future.
+          </p>
+          <p>
+            <a href="#" class="about-link"
+              >Click here for more about Furtados.</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <img src="images/150_years_old_icon.avif" alt="150 Years of Legacy" />
+          <p>150 Years of Legacy</p>
+        </div>
+        <div class="highlight-item">
+          <img
+            src="images/trusted_music_store_icon.avif"
+            alt="Trusted Music Store"
+          />
+          <p>Trusted Music Store</p>
+        </div>
+        <div class="highlight-item">
+          <img
+            src="images/150_plus_music_brands_icon.avif"
+            alt="150 plus Music Brands"
+          />
+          <p>150 plus Music Brands</p>
+        </div>
+      </div>
+    </div>
+    <!-- brand     -->
+    <div class="brand-carousel">
+      <h2 class="carousel-heading">Shop by Brands</h2>
+      <div class="carousel-container">
+        <div class="brand-slide">
+          <img src="images/bra1.avif" alt="Steinway & Sons" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra2.avif" alt="Paul Reed Smith Guitars" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra11.avif" alt="Granada" />
+        </div>
+        <div class="brand-slide"><img src="images/bra3.avif"" alt="Meinl"></div>
+        <div class="brand-slide">
+          <img src="images/bra4.avif" alt="Vox Amplification" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra5.avif" alt="Korg" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra6.avif" alt="Gibson" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra8.avif" alt="Pearl" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra9.avif" alt="Mapex" />
+        </div>
+        <div class="brand-slide">
+          <img src="images/bra10.avif" alt="Laney" />
+        </div>
+      </div>
+      <div class="carousel-navigation">
+        <div class="nav-arrows">
+          <span class="arrow left-arrow">&#10094;</span>
+          <span class="arrow right-arrow">&#10095;</span>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <!-- lower para section -->
+    <div class="steinway-section">
+        <div class="steinway-content">
+            <img src="images/bra2.avif" alt="Steinway & Sons Logo" class="steinway-logo">
+            <p>Furtados Music has been the exclusive Steinway & Sons dealer in India for the last 20 years.</p>
+            <div class="buttons">
+                <button class="launch-site">Launch site</button>
+                <button class="contact-specialist">Contact Specialist</button>
+            </div>
+        </div>
+    </div>
+    <!-- more from melody  -->
+     <div class="more">
+        <h2>More from Melody</h2>
+        <div class="moreContent">
+            <div class="moreItem">
+                <img src="images/more1.avif" alt="" class="moreImg">
+                <h3 class="moreHead">FSM Buddy</h3>
+                <p class="morePara">
+                    FSM Buddy is an online learning platform that provides
+                    online music classes for instruments like keyboard, piano,
+                    guitars, drums, western vocals, Indian vocals, and morel
+                </p>
+            </div>
+            <div class="moreItem">
+                <img src="images/more2.avif" alt="" class="moreImg">
+                <h3 class="moreHead">FSM Buddy</h3>
+                <p class="morePara">
+                    FSM Buddy is an online learning platform that provides
+                    online music classes for instruments like keyboard, piano,
+                    guitars, drums, western vocals, Indian vocals, and morel
+                </p>
+            </div>
+            <div class="moreItem">
+                <img src="images/more3.avif" alt="" class="moreImg">
+                <h3 class="moreHead">FSM Buddy</h3>
+                <p class="morePara">
+                    FSM Buddy is an online learning platform that provides
+                    online music classes for instruments like keyboard, piano,
+                    guitars, drums, western vocals, Indian vocals, and morel
+                </p>
+            </div>
+        </div>
+     </div>
+    <!-- footer section  -->
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="https://melodymusic.com/">melodymusic.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
